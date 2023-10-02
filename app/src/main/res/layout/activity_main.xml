@@ -205,7 +205,7 @@
                     android:layout_margin="15dp"
                     android:layout_weight="0.5"
                     android:src="@drawable/btn_4"
-                    app:tint="@color/white" />
+                    app:tint="@color/black" />
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
