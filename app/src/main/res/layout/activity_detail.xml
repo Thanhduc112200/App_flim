@@ -117,28 +117,6 @@
                     app:layout_constraintTop_toTopOf="@+id/posterBigImg"
 
                     app:shapeAppearanceOverlay="@style/roundedImageRounded" />
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/bg_circle_dark"
-                    android:padding="8dp"
-                    android:src="@drawable/ic_round_arrow_back_24"
-                    app:tint="@color/white"
-                    tools:layout_editor_absoluteX="3dp"
-                    tools:layout_editor_absoluteY="6dp" />
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/bg_circle_dark"
-                    android:padding="8dp"
-                    android:src="@drawable/ic_round_favorite_24"
-                    app:tint="@color/white"
-                    tools:layout_editor_absoluteX="376dp"
-                    tools:layout_editor_absoluteY="6dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -150,6 +128,28 @@
                 app:layout_constraintStart_toStartOf="@id/constraintLayout"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_circle_dark"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_round_arrow_back_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_circle_dark"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_round_favorite_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
