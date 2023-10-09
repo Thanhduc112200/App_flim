@@ -214,6 +214,6 @@
             app:maxImageSize="30dp"
             app:layout_anchor="@id/app_bar"
             style="@style/Floating"
-            />
+            android:contentDescription="TODO" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
