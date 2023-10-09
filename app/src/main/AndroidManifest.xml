@@ -15,9 +15,9 @@
         <activity
             android:name=".viewholder_detail_image"
             android:exported="false" />
-        <activity
-            android:name=".Viewholder_Detail_Image"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Viewholder_Detail_Image"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
