@@ -17,17 +17,17 @@ public class Film {
     public Film() {
     }
 
-    public Film(int filmId, String filmName, String director, String genre, int time, String language, int premiereDate, String imgUrl) {
-        this.filmId = filmId;
-        FilmName = filmName;
-        Director = director;
-        Genre = genre;
-        Time = time;
-        Language = language;
-        PremiereDate = premiereDate;
-
-        ImgUrl = imgUrl;
-    }
+//    public Film(int filmId, String filmName, String director, String genre, int time, String language, int premiereDate, String imgUrl) {
+//        this.filmId = filmId;
+//        FilmName = filmName;
+//        Director = director;
+//        Genre = genre;
+//        Time = time;
+//        Language = language;
+//        PremiereDate = premiereDate;
+//
+//        ImgUrl = imgUrl;
+//    }
 
     public Film(String filmName, String director, String genre, int time, String language, int premiereDate, String imgUrl)  {
         FilmName = filmName;
