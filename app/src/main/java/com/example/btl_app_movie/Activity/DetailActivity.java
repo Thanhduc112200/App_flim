@@ -1,14 +1,16 @@
-package com.example.btl_app_movie;
+package com.example.btl_app_movie.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class IntroActivity extends AppCompatActivity {
+import com.example.btl_app_movie.R;
+
+public class DetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_detail);
     }
 }
