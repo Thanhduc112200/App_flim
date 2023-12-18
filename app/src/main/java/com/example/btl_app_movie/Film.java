@@ -5,38 +5,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Film {
-    private int filmId;
-    private String FilmName;
-    private String Director;
-    private String Genre;
-    private int Time;
-    private String Language;
-    private int PremiereDate;
-    private String ImgUrl;
+    int filmId;
+    String FilmName;
+    String Category;
+    String Time;
+    String TacGia;
+    byte[] Image;
+    String ImgUrl;
 
-    public Film() {
-    }
-
-//    public Film(int filmId, String filmName, String director, String genre, int time, String language, int premiereDate, String imgUrl) {
-//        this.filmId = filmId;
-//        FilmName = filmName;
-//        Director = director;
-//        Genre = genre;
-//        Time = time;
-//        Language = language;
-//        PremiereDate = premiereDate;
-//
-//        ImgUrl = imgUrl;
-//    }
-
-    public Film(String filmName, String director, String genre, int time, String language, int premiereDate, String imgUrl)  {
+    public Film(String filmName, String category, String time, String tacGia, String imgUrl) {
         FilmName = filmName;
-        Director = director;
-        Genre = genre;
+        Category = category;
         Time = time;
-        Language = language;
-        PremiereDate = premiereDate;
-
+        TacGia = tacGia;
         ImgUrl = imgUrl;
     }
 
@@ -56,12 +37,36 @@ public class Film {
         FilmName = filmName;
     }
 
-    public String getDirector() {
-        return Director;
+    public String getCategory() {
+        return Category;
     }
 
-    public void setDirector(String director) {
-        Director = director;
+    public void setCategory(String category) {
+        Category = category;
+    }
+
+    public String getTime() {
+        return Time;
+    }
+
+    public void setTime(String time) {
+        Time = time;
+    }
+
+    public String getTacGia() {
+        return TacGia;
+    }
+
+    public void setTacGia(String tacGia) {
+        TacGia = tacGia;
+    }
+
+    public byte[] getImage() {
+        return Image;
+    }
+
+    public void setImage(byte[] image) {
+        Image = image;
     }
 
     public String getImgUrl() {
@@ -70,38 +75,6 @@ public class Film {
 
     public void setImgUrl(String imgUrl) {
         ImgUrl = imgUrl;
-    }
-
-    public String getGenre() {
-        return Genre;
-    }
-
-    public void setGenre(String genre) {
-        Genre = genre;
-    }
-
-    public int getTime() {
-        return Time;
-    }
-
-    public void setTime(int time) {
-        Time = time;
-    }
-
-    public String getLanguage() {
-        return Language;
-    }
-
-    public void setLanguage(String language) {
-        Language = language;
-    }
-
-    public int getPremiereDate() {
-        return PremiereDate;
-    }
-
-    public void setPremiereDate(int premiereDate) {
-        PremiereDate = premiereDate;
     }
 }
 

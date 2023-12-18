@@ -13,11 +13,11 @@
         android:theme="@style/Theme.BTL_App_Movie"
         tools:targetApi="31">
         <activity
+            android:name=".AccoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".viewholder_detail_image"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".Viewholder_Detail_Image"-->
-<!--            android:exported="false" />-->
         <activity
             android:name=".Activity.DetailActivity"
             android:exported="false" />
