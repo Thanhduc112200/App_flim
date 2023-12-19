@@ -1,4 +1,6 @@
 package com.example.btl_app_movie.Activity;
+import android.net.Uri;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +8,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
 
+import com.example.btl_app_movie.Playvideo;
 import com.example.btl_app_movie.R;
 import com.example.btl_app_movie.databinding.ActivityDetailBinding;
 
@@ -14,6 +18,8 @@ public class DetailActivity extends AppCompatActivity {
     ActivityDetailBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("MyApp", "detail");
+
         super.onCreate(savedInstanceState);
         binding = ActivityDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -30,5 +36,12 @@ public class DetailActivity extends AppCompatActivity {
         binding.movieName.setText(title);
         binding.movieTime.setText(time);
         binding.movieActorInfo.setText(tacgia);
+        binding.Play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://phimmoiyyy.net/phim-le/yeu-lai-vo-ngau");
+                startActivity(new Intent(Intent.ACTION_VIEW,uri));
+            }
+        });
     }
 }

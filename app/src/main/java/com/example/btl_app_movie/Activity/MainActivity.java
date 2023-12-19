@@ -2,6 +2,7 @@ package com.example.btl_app_movie.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -10,7 +11,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.btl_app_movie.AccoutActivity;
 import com.example.btl_app_movie.Adapter.FilmAdapter;
 import com.example.btl_app_movie.DBHandler;
 import com.example.btl_app_movie.Film;
@@ -35,21 +35,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         DBHandler handler = new DBHandler(MainActivity.this);
         processCopy();
-        imageButton= findViewById(R.id.login);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-                startActivity(intent);
-            }
-        });
         view1 = findViewById(R.id.view1);
         DBHandler db = new DBHandler(this);
         films = db.getAllFilm();
         FilmAdapter adapter = new FilmAdapter(this, films);
         view1.setAdapter(adapter);
         view1.hasFixedSize();
-        view1.setLayoutManager(new GridLayoutManager(this,2));
+        view1.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
     }
     private void processCopy() {
         //pri p vate app
